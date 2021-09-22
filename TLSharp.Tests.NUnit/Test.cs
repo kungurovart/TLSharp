@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Threading.Tasks;
 
@@ -9,7 +9,7 @@ namespace TLSharp.Tests
     [TestFixture]
     public class TLSharpTestsNUnit : TLSharpTests
     {
-        [TestFixtureSetUp]
+        [Test]
         public void Init()
         {
             base.Init(o => Assert.IsNotNull(o), b => Assert.IsTrue(b));
